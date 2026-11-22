@@ -1,3 +1,4 @@
+
 from pydantic import BaseModel, EmailStr
 
 
@@ -25,3 +26,7 @@ class UserResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class SensitiveInfo(BaseModel):
+    information: str

@@ -1,3 +1,4 @@
+
 from sqlalchemy import Column, Integer, String, Boolean
 from database.connection import Base
 
@@ -11,3 +12,4 @@ class User(Base):
     hashed_password = Column(String(255), nullable=False)
     role = Column(String(20), default="user")
     is_active = Column(Boolean, default=True)
+    encrypted_info = Column(String(500), nullable=True)

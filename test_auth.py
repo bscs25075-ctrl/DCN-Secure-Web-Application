@@ -13,4 +13,3 @@ print("Password Verification:", result)
 # Test JWT token
 token = create_access_token({"sub": "testuser"})
 print("JWT Token Created Successfully!")
-print("Token:", token)
